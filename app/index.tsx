@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -11,6 +12,7 @@ export default function Index() {
       }}
     >
       <Text style={{color:"white"}}>Hello react native</Text>
+      <Link href="/about" style={{color: "white"}}>Go to about</Link>
     </View>
   );
 }
